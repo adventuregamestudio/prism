@@ -99,6 +99,17 @@
 			"title": "Agda",
 			"owner": "xy-ren"
 		},
+		"ags": {
+			"alias": "ags-script",
+			"owner": "adventuregamestudio",
+			"require": "clike",
+			"title": "Adventure Game Studio"
+		},
+		"agsdialog": {
+			"owner": "adventuregamestudio",
+			"require": "ags",
+			"title": "Adventure Game Studio dialog"
+		},
 		"al": {
 			"title": "AL",
 			"owner": "RunDevelopment"

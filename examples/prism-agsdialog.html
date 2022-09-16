@@ -1,0 +1,36 @@
+<h2>Comments</h2>
+<pre><code>// A commented line.</code></pre>
+<pre><code>A //partially commented line.</code></pre>
+
+<h2>Character speech</h2>
+<pre><code>Roger: Hello. How are you?
+narrator: The man looks you in the eye.
+player: I'm fine.
+Babar: I'm fine too!
+</code></pre>
+
+<h2>Script indices</h2>
+<pre><code>@S
+@1
+@2
+@1000
+</code></pre>
+
+<h2>Script keywords</h2>
+<pre><code>goto-dialog
+goto-previous
+option-off
+option-off-forever
+option-on
+run-script
+return
+stop
+</code></pre>
+
+<h2>Embedded AGS script</h2>
+<pre><code>Roger: I'm looking for my key.
+    if (player.HasInventory(iKey)) {
+        player.Say("Actually, I'd better go.");
+        return RUN_DIALOG_STOP_DIALOG;
+    }
+</code></pre>
