@@ -3,6 +3,12 @@ Prism.languages.agsdialog = {
 		pattern: /(\n|^).*/,
 		lookbehind: true,
 		inside: {
+			'script-line': {
+				pattern: /(^[ \t]+).*/,
+				lookbehind: true,
+				inside: Prism.languages.ags
+			},
+			'comment': /\/\/.*/,
 			'character-line': {
 				pattern: /^\w+:.*/,
 				inside: {
@@ -29,13 +35,7 @@ Prism.languages.agsdialog = {
 				pattern: /^@(?:[0-9]+|S)\b/,
 				alias: 'variable'
 			},
-			'keyword': /^(?:goto-(?:dialog|previous)|option-o(?:ff(?:-forever)?|n)|r(?:eturn|un-script)|stop)\b/,
-			'script-line': {
-				pattern: /(^[ \t]+).*/,
-				lookbehind: true,
-				inside: Prism.languages.ags
-			},
-			'comment': /\/\/.*/
+			'keyword': /^(?:goto-(?:dialog|previous)|option-o(?:ff(?:-forever)?|n)|r(?:eturn|un-script)|stop)\b/
 		}
 	}
 }
