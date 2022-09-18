@@ -4,7 +4,7 @@ Prism.languages.agsdialog = {
 		lookbehind: true,
 		inside: {
 			'character-line': {
-				pattern: /^\w+:[ \t]+.*/,
+				pattern: /^\w+:.*/,
 				inside: {
 					'character-alias': {
 						pattern: /^(?:(?:narrato|playe)r)\b/,
@@ -22,10 +22,7 @@ Prism.languages.agsdialog = {
 					// matches.  The "..." pause command and commenting are not
 					// considered special because commenting rules appears to be
 					// inconsistent in the original parser.
-					'dialog': {
-						pattern: /([ \t]+).*/,
-						lookbehind: true
-					}
+					'dialog': /.*/
 				}
 			},
 			'dialog-index': {
