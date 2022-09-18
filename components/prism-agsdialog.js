@@ -24,10 +24,16 @@ Prism.languages.agsdialog = {
 						pattern: /^:/,
 						alias: 'punctuation'
 					},
+					// This is documented as being "..." but any number of "."
+					// characters will work (as does an empty line).
+					'pause-command': {
+						pattern: /^[ \t]*\.+(?:[ \t]*$|\/\/)/,
+						inside: {
+							'symbol': /\.+/
+						}
+					},
 					// Don't highlight dialog lines but prevent addtional
-					// matches.  The "..." pause command and commenting are not
-					// considered special because commenting rules appears to be
-					// inconsistent in the original parser.
+					// non-greedy matches from occuring.
 					'dialog': /.*/
 				}
 			},
