@@ -16,18 +16,13 @@ Prism.languages.ags = {
 	// with an explicit return type requires looking ahead for opening
 	// parentheses.  Note that in terms of highlighting we keep pretending that
 	// function type is a command rather than an alias of int.
-	'function-def-typed': {
-		pattern: /(\b(?:String|bool|char|float|int|short|void)(?:\[\])?\s+(?:noloopcheck\s+)?)\w+\s*\(/,
+	'function-def': {
+		pattern: /(\b(?:String|bool|char|f(?:loat|unction)|int|short|void)(?:\[\])?\s+(?:noloopcheck\s+)?)\w+(?:::\w+)?\s*\(/,
 		lookbehind: true,
 		inside: {
-			'function': /\w+/,
+			'function': /[^\s(]+/,
 			'punctuation': /\(/
 		}
-	},
-	'function-def-legacy': {
-		pattern: /(\bfunction\s+(?:noloopcheck\s+)?)\w+/,
-		lookbehind: true,
-		alias: 'function'
 	},
 	'struct-name': {
 		pattern: /(\bstruct\s+)\w+/,
