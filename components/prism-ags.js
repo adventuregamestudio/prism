@@ -17,7 +17,7 @@ Prism.languages.ags = {
 	// parentheses.  Note that in terms of highlighting we keep pretending that
 	// function type is a command rather than an alias of int.
 	'function-def-typed': {
-		pattern: /(\b(?:String|bool|char|(?:floa|in|shor)t)(?:\[\])?\s+(?:noloopcheck\s+)?)\w+\s*\(/,
+		pattern: /(\b(?:String|bool|char|float|int|short|void)(?:\[\])?\s+(?:noloopcheck\s+)?)\w+\s*\(/,
 		lookbehind: true,
 		inside: {
 			'function': /\w+/,
@@ -42,10 +42,10 @@ Prism.languages.ags = {
 	/*
 	  Type
 	  ----
-	  "String" "bool" "char" "float" "int" "short"
+	  "String" "bool" "char" "float" "int" "short" "void"
 	*/
 	'type': {
-		pattern: /\b(String|bool|char|(?:floa|in|shor)t)\b/,
+		pattern: /\b(?:String|bool|char|float|int|short|void)\b/,
 		alias: 'builtin'
 	},
 	/*
