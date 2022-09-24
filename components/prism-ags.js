@@ -1,4 +1,9 @@
 Prism.languages.ags = {
+	'preprocessor': {
+		pattern: /#.*/,
+		greedy: true,
+		alias: 'constant'
+	},
 	// Greedy C-like comment.
 	'comment': Prism.languages.clike.comment,
 	// Greedy C-like string.
