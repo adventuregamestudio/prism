@@ -141,10 +141,10 @@ Prism.languages.ags = {
 	/*
 	  Dialog control tokens
 	  ---------------------
-	  "RUN_DIALOG_GOTO_PREVIOUS" "RUN_DIALOG_RETURN" "RUN_DIALOG_STOP_DIALOG"
+	  "DIALOG_PARSER_SELECTED" "RUN_DIALOG_GOTO_PREVIOUS" "RUN_DIALOG_RETURN" "RUN_DIALOG_STOP_DIALOG"
 	*/
 	'dialog-tokens': {
-		pattern: /\bRUN_DIALOG_(?:GOTO_PREVIOUS|RETURN|STOP_DIALOG)\b/,
+		pattern: /\b(?:DIALOG_PARSER_SELECTED|RUN_DIALOG_(?:GOTO_PREVIOUS|RETURN|STOP_DIALOG))\b/,
 		alias: 'constant'
 	},
 	/*
