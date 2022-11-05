@@ -77,9 +77,9 @@ Prism.languages.ags = {
 	/*
 	  keywords
 	  --------
-	  "break" "case" "continue" "do" "else" "enum" "export" "for" "function" "if" "import" "managed" "new" "noloopcheck" "protected" "readonly" "return" "static" "struct" "switch" "this" "while" "writeprotected"
+	  "attribute" "break" "case" "continue" "do" "else" "enum" "export" "for" "function" "if" "import" "managed" "new" "noloopcheck" "protected" "readonly" "return" "static" "struct" "switch" "this" "while" "writeprotected"
 	*/
-	'keyword': /\b(?:break|c(?:(?:as|ontinu)e)|do|e(?:lse|num|xport)|f(?:or|unction)|i(?:f|mport)|managed|n(?:ew|oloopcheck)|protected|re(?:adonly|turn)|s(?:t(?:atic|ruct)|witch)|this|w(?:hile|riteprotected))\b/,
+	'keyword': /\b(?:attribute|break|c(?:(?:as|ontinu)e)|do|e(?:lse|num|xport)|f(?:or|unction)|i(?:f|mport)|managed|n(?:ew|oloopcheck)|protected|re(?:adonly|turn)|s(?:t(?:atic|ruct)|witch)|this|w(?:hile|riteprotected))\b/,
 	/*
 	  Global functions
 	  ----------------
