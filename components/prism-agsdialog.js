@@ -38,7 +38,7 @@ Prism.languages.agsdialog = {
 				}
 			},
 			'dialog-index': {
-				pattern: /^@(?:[0-9]+|S)\b/,
+				pattern: /^@(?:\d+|S)\b/,
 				alias: 'variable'
 			},
 			'keyword': /^(?:goto-(?:dialog|previous)|option-o(?:ff(?:-forever)?|n)|r(?:eturn|un-script)|stop)\b/
