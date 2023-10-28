@@ -44,4 +44,4 @@ Prism.languages.agsdialog = {
 			'keyword': /^(?:goto-(?:dialog|previous)|option-o(?:ff(?:-forever)?|n)|r(?:eturn|un-script)|stop)\b/
 		}
 	}
-}
+};
