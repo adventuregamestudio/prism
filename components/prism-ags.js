@@ -35,7 +35,7 @@ Prism.languages.ags = {
 		alias: 'class-name'
 	},
 	'enum-name': {
-		pattern: /(\enum\s+)\w+/,
+		pattern: /(enum\s+)\w+/,
 		lookbehind: true,
 		alias: 'class-name'
 	},
